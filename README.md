@@ -1,5 +1,5 @@
 # google-homepage
 
-[live preview](urhttps://karlton-suits.github.io/google-homepage/)
+[live preview](https://karlton-suits.github.io/google-homepage/)
 
 
