@@ -1,1 +1,269 @@
-@import url('../one.css');
+
+/* ---------- base ---------- */
+body{
+    height: 100%;
+    font-size: 14px;
+    font-family: Roboto,arial,sans-serif;
+}
+
+a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+/* ---------- layout ---------- */
+
+.root-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------- top header row ---------- */
+
+/* header bar at the top */
+.header-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 6px;
+    height: 60px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.header-nav > div{
+    padding: 5px;
+}
+
+.first-item{
+    margin-left: 15px;
+}
+
+/* right align gmail, images, apps, icon */
+.push {
+    margin-left: auto;
+}
+
+.last-item{
+    margin-right: 4px;
+}
+
+.nav-right{
+    font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
+    padding-left: 20px;
+    margin-bottom: 1px;
+}
+
+/* apps icon */
+.apps{
+        fill: rgb(104, 104, 104);
+    }
+
+/* ---------- foogle ----------  */
+/* above logo space */
+.logo-container {
+    display: flex;
+    height: 290px;
+}
+
+.logo {
+    /* margin: auto; */
+    margin-top: auto;
+}
+
+
+/* ---------- search bar ---------- */
+.search-container-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 625px;
+    padding: 20px;
+    padding-top: 26px;
+    box-sizing: border-box;
+    min-width: 350px;
+    width: 100%;
+}
+
+/* search bar styles */
+.search-bar{
+    border: 1px solid #dfe1e5;
+    line-height: 40px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 5px 9px 0 16px;
+    padding-left: 14px;
+    margin-right: 1px;
+}
+
+.mag-glass{
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+}
+
+/* additional selector bc (at the time i thought) more specific to the icon */
+#mag{
+    display: block;
+    /* height: 100%;
+    width: 100%; */
+    fill: #9aa0a6;
+}
+
+.search-input-container{
+    display: flex;
+    flex-grow: 1;
+}
+
+.search-input{
+    flex: 100%;
+    border: none;
+    font-size: 16px;
+    margin-top: -4px;
+    outline: none;
+}
+
+.microphone {
+    height: 100%;
+    width: 24px;
+}
+
+.mic-container{
+    padding: 0 8px;
+    padding-bottom: 6px;     
+}
+
+#mic{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+    
+.search-buttons{
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.google-search-button {
+    margin: 11px 6px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;  
+}
+
+.button-content {
+    line-height: 34px;
+}
+
+/* grows to appropriate size */
+.bottom-space {
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.footer-wrapper{
+    flex-shrink: 0;
+    width: 100%;
+}
+
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 0 20px;
+        color: #70757a;
+        background: #f2f2f2;
+        white-space: nowrap;
+    }
+    
+    .footer-left {
+        display: flex;
+        width: calc(100% / 3);
+        
+    }
+
+    .footer-center{
+        display: flex;
+        width: calc(100% / 3);
+        justify-content: center;
+    }
+
+    .leaf-image{
+        height: 14px;
+        margin-right: 6px;
+        margin-top: 2px;
+    }
+
+    #leaf-container{
+        padding-right: 0px;
+    }
+
+    /* TODO: align center with just text and not also leaf */
+    #leaf-adjacent{
+        padding-left: 0px;
+    }
+
+    .footer-right{
+        display: flex;
+        width: calc(100% / 3);
+        justify-content: flex-end;
+    }
+
+    .footer-element{    
+        padding: 13px 15px 13px 15px;
+    }
+    
+
+    .footer-link{
+        color: #70757a;
+    }
+
+    a.text-link:hover{
+        text-decoration: underline;
+    }
+
+    a.footer-link:hover{
+        text-decoration: underline;
+    }
+
+    .google-search-button:hover{
+        box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+        background-color: #f8f9fa;
+        border: 1px solid #dadce0;
+        color: #202124;
+    }
+
+    .search-bar:hover{
+        background-color: #fff;
+        box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+        border-color: rgba(223,225,229,0);
+    }
+
+    .icon{
+        border-radius: 50%;
+        padding: 4px;
+    }
+    .icon:hover{
+        background-color: rgba(60,64,67,0.08);
+    }
