@@ -40,6 +40,7 @@ a{
 
 .first-item{
     margin-left: 15px;
+    margin-right: 10px;
 }
 
 /* right align gmail, images, apps, icon */
@@ -57,10 +58,37 @@ a{
     margin-bottom: 1px;
 }
 
+.pre-icons{
+    padding-right: 17px; 
+    padding-left: 10px;
+}
+
+.apps-wrapper{
+    padding-left: 2px; 
+    padding-right: 4px;
+}
+
+.icon-container{
+    height: 32px; 
+    width: 32px; 
+    padding: 4px;
+}
+
 /* apps icon */
 .apps{
-        fill: rgb(104, 104, 104);
-    }
+    fill: rgb(104, 104, 104);
+    height: 32px;
+    width: 32px; 
+    padding: 4px;
+}
+
+.last-item-wrapper{
+    padding: 4px;
+}
+
+.user-icon{
+    border-radius: 50%
+}
 
 /* ---------- foogle ----------  */
 /* above logo space */
@@ -68,6 +96,7 @@ a{
     display: flex;
     height: 290px;
 }
+
 
 .logo {
     /* margin: auto; */
