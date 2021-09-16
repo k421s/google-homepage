@@ -9,8 +9,7 @@ a{
         text-decoration: none;
         color: black;
     }
-
-
+    
 /* ---------- layout ---------- */
 
 .root-wrapper {
@@ -33,7 +32,7 @@ a{
     box-sizing: border-box;
 }
 
-.header-nav > div{
+.header-nav-child{
     padding: 5px;
 }
 
@@ -47,17 +46,14 @@ a{
     margin-left: auto;
 }
 
-.last-item{
-    margin-right: 4px;
-}
-
 .nav-right{
     font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
     padding-left: 20px;
     margin-bottom: 1px;
 }
 
-.pre-icons{
+/* right aligned links before icons */
+#pre-icons{
     padding-right: 17px; 
     padding-left: 10px;
 }
@@ -67,6 +63,7 @@ a{
     padding-right: 4px;
 }
 
+/* apps icon */
 .icon-container{
     height: 32px; 
     width: 32px; 
@@ -78,11 +75,15 @@ a{
     fill: rgb(104, 104, 104);
     height: 32px;
     width: 32px; 
+}
+
+/* finicky image and svg placement so it stays */
+.last-item-wrapper{
     padding: 4px;
 }
 
-.last-item-wrapper{
-    padding: 4px;
+.last-item{
+    margin-right: 4px;
 }
 
 .user-icon{
@@ -90,12 +91,10 @@ a{
 }
 
 /* ---------- foogle ----------  */
-/* above logo space */
 .logo-container {
     display: flex;
-    height: 290px;
+    height: 260px;
 }
-
 
 .logo {
     /* margin: auto; */
@@ -162,14 +161,14 @@ a{
     outline: none;
 }
 
-.microphone {
-    height: 100%;
-    width: 24px;
-}
-
 .mic-container{
     padding: 0 8px;
     padding-bottom: 6px;     
+}
+
+.microphone {
+    height: 100%;
+    width: 24px;
 }
 
 #mic{
@@ -262,7 +261,7 @@ a{
     padding: 13px 15px 13px 15px;
 }
 
-
+/* interactive */
 .footer-link{
     color: #70757a;
 }
@@ -292,6 +291,7 @@ a.footer-link:hover{
     border-radius: 50%;
     padding: 4px;
 }
+
 .icon:hover{
     background-color: rgba(60,64,67,0.08);
 }
